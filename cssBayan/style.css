@@ -8,8 +8,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Hiding the checkboxes or radio button*/
-
 input {
     position: absolute;
     opacity: 0;
@@ -19,7 +17,7 @@ input {
 .Bayan_str {
     color: #502c2c;
     margin-bottom: 1rem;
-    border-top: .5rem solid #502c2c;
+    border-top: .3rem solid #502c2c;
 }
 
 .label {
@@ -46,9 +44,7 @@ input {
 .Str_content {
     max-height: 0;
     padding: 0 1em;
-    
     color: #2c3e50;
-    
     transition: all 0.35s;
     display: none;
 }
