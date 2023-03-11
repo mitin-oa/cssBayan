@@ -1,0 +1,68 @@
+body {
+    color: #502c2c;
+    background: #f1edec;
+    padding: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 45rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.Bayan_str {
+    color: #502c2c;
+    margin-bottom: 1rem;
+    border-top: .3rem solid #502c2c;
+}
+
+.label {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    
+}
+     
+.label::after {
+    content: '\002B';
+    padding: 0.51rem;
+    transform: scale(1.8);
+    text-align: center;
+    transition: all 0.35s;
+    
+} 
+    
+.Str_content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    transition: all 0.35s;
+    display: none;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+input:checked + .label::after {
+    content: '\2013'; 
+    transform: scale(1.5);
+    }
+    
+input:checked ~ .Str_content {
+    max-height: 100vh;
+    padding: 1em;
+    display: block;
+    transition: all 0.35s;
+}
